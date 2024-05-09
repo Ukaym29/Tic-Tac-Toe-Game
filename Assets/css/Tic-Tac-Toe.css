@@ -1,0 +1,187 @@
+/*  This is the styling for the whole space i.e everything you see on your web */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*  This styles the body */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4e21b5cc, #d161ff);
+}
+
+ /*  This styling is for the texts of all html elements */
+html {
+    font-size: 15px;
+}
+
+/*  This styling is for the div wrapper containing every thing */
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/* This styling is for container div */
+.container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+/*  This styling is for all the button options that have a class of button-option */
+.button-option {
+    background: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: #d161ff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+ 
+/*  This styling is for the restart button */
+#restart {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #0a0027;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto;
+    display: block;
+
+}
+
+/*  This styling is for the restart button on hover state */
+#restart:hover {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #270008;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto;
+    display: block;
+    box-shadow: #ff6169;
+}
+
+
+/*  This styling is for endbutton */
+#endButton {
+    font-size: 1em;
+    margin-top: 1.em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #b1010188;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.em auto;
+    display: flex;
+    align-items: center;
+    float: left;
+
+}
+
+/*  This styling is for endbutton on hover state */
+#endButton:hover {
+    font-size: 1em;
+    margin-top: 1.em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #ff0404;
+    color: #ffffff;
+    border: 2px solid white;
+    position: relative;
+    margin: 1.em auto;
+    display: flex;
+    align-items: center;
+    float: left;
+
+}
+
+/* This is for the pop up menu, the page that comes up when the game is not running to display scores and winner  */
+.popup {
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+    background-image: url(../image/Tic-tac-toe.webp);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 8vmin;
+
+}
+
+
+/*  This styling is for newgame button */
+#new-game {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #0a0027;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: none;
+}
+/*  This styling is for newgame button on hover state */
+#new-game:hover {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #270008;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: 2px solid white;
+    /* transform: scale(0.5,1); */
+    box-shadow: #d161ff 4px;
+
+}
+  /*  This styling covers the display text that shows in the popup page */
+#message {
+    color: #f200ff;
+    text-align: center;
+    font-size: 0.7em;
+    background: #0a0027;
+    
+}
+
+
+/*  This styling indicates that the  class of .popup.hide has a display of none as it enables the javascript function to work */
+.popup.hide {
+    display: none;
+}
+
+/*  This styling is for player X score  */
+#xScore {
+    margin: auto;
+    margin-top: 5px;
+    color: #de07ff;
+
+}
+
+/*  This styling is for player O score  */
+#oScore{
+    margin-top: 5px;
+    margin-top: 5px;
+    color: #fef9ff;
+}
+/* This styling is for the div that holds the scores */
+#scores{
+    color: #ffffff;
+}
